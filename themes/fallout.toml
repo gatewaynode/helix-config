@@ -17,11 +17,11 @@
 "ui.selection" = { bg = "my_gray3" }
 "comment" = { fg = "my_gray4", modifiers = ["italic"] }
 "ui.cursorline" = { bg = "my_gray2" }
-"ui.statusline" = { fg = "my_gray6", bg = "my_gray2" }
+"ui.statusline" = { fg = "bsod", bg = "mutant", modifiers = ["bold", "dim"] }
 "ui.statusline.inactive" = { fg = 'my_gray4', bg = 'my_gray2' }
-"ui.statusline.insert" = {fg = "my_black", bg = "my_gray5", modifiers = ["bold"]}
-"ui.statusline.normal" = {fg = "my_gray6", bg = "my_gray2"}
-"ui.statusline.select" = {fg = "my_gray6", bg = "my_black", modifiers = ["bold"]}
+"ui.statusline.insert" = {fg = "my_black", bg = "bone", modifiers = ["bold", "slow_blink"]}
+"ui.statusline.normal" = {fg = "plasma", bg = "bsod"}
+"ui.statusline.select" = {fg = "my_black", bg = "yield", modifiers = ["bold", "slow_blink"]}
 "ui.cursor" = { fg = "my_gray5", modifiers = ["reversed"] }
 "ui.cursor.primary" = { fg = "my_white", modifiers = ["reversed"] }
 "ui.cursorline.primary" = { bg = "my_black" }
@@ -30,13 +30,13 @@
 "operator" = "bone"
 "ui.text.focus" = "my_white"
 "variable" = "my_white3"
-"constant.numeric" = "my_turquoise"
+"constant.numeric" = "bsod"
 "constant" = "my_white3"
 "attribute" = "my_turquoise"
 "type" = { fg = "my_white3", modifiers = ["italic"] }
 "ui.cursor.match" = { fg = "my_white3", modifiers = ["underlined"] }
-"string"  = "my_green"
-"variable.other.member" = "my_brown"
+"string"  = "dirty_sky"
+"variable.other.member" = "yield"
 "constant.character.escape" = "my_turquoise"
 "function" = "my_yellow1"
 "constructor" = "my_yellow1"
@@ -70,8 +70,12 @@
 "error" = "my_red"
 
 [palette]
-bone          = "#FCFCFC"
-yield         = "#e89005"
+bone          = "#FCFCFC" # Almost white
+yield         = "#e89005" # Orangy yellow
+nuka          = "#0b4cd4" # Bluish
+plasma        = "#FEDD00" # A bright yellow
+bsod          = "#0827F5" # A deep, brightblue
+mutant        = "#AADB1E" # A bright green
 my_black      = "#111111" # Cursorline
 my_gray0      = "#090909" # Default Background
 my_gray1      = "#0e0e0e" # Ruler
@@ -86,6 +90,7 @@ my_white2     = "#80b918" # Variables, XML Tags, Markup Link Text, Markup Lists,
 my_white3     = "#2b9348" # Classes, Markup Bold, Search Text Background
 my_turquoise  = "#86c1b9" # Support, Regular Expressions, Escape Characters
 my_turquoise2 = "#72a59e" # URL
+dirty_sky     = "#1e88e5" # dirty blue: Strings, Inherited Class, Markup Code, Diff Inserted
 my_green      = "#1e88e5" # Strings, Inherited Class, Markup Code, Diff Inserted
 my_brown      = "#f7b538" # Member variables, Quotes
 my_yellow1    = "#e89005" # Functions, Methods, Attribute IDs, Headings
