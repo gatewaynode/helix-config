@@ -12,6 +12,10 @@ Installation
   - https://rust-analyzer.github.io/manual.html#rust-analyzer-language-server-binary
 1. Install Python LSP (package manager method)
   - `sudo apt install python3-pylsp`
+1. Install ShellCheck (package manager method)
+  - `sudo apt install shellcheck`
+1. Install Bash-Language-Server (npm method)
+  - `npm i -g bash-language-server`
 1. Clone this repository into XDG config dir for Helix
   - `cd ~/.config/helix; git clone git@github.com:gatewaynode/helix-config.git; mv helix-config/.git ./; mv helix-config/* ./; rm -rf helix-config`
 1. Test that Python and Rust LSP's are working
